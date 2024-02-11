@@ -296,7 +296,7 @@ nav .links ul a:hover::after {
   transition: transform 0.2s;
 }
 .layer{
-  width: 400px;
+  width: fit-content;
   height: 0%;
   border-radius: 10px;
   background: linear-gradient(rgba(0,0,0,0.6), #FB2576);

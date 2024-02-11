@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- external css link -->
+    <link rel="stylesheet" href="./styles.css">
+    
+    <!-- font awesome css link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Isbah Ansari - Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+
+            <!-- ------Nav Bar------ -->
+            <nav class="centre">
+                <div class="logo centre">Is<span>bah</span></div>
+                <div class="links">
+                    <ul id="sideMenu" class="centre">
+                        <li><a id="homeButton" href="#header">Home</a></li>
+                        <li><a id="aboutButton" href="#about">About</a></li>
+                        <li><a id="servicesButton" href="#services">Services</a></li>
+                        <li><a id="projectsButton" href="#projects">Projects</a></li>
+                        <li><a id="contactButton" href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark centre" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+
+            <!-- ---------Container-------- -->
+            <div class="head-Content">
+                <h1>I'm <div class="name cursor" title="Name">Is<span>bah</span></div> Ansari</h1>
+                <div class="main-typewriter">
+                    <p class="typewriter"><span>Frontend Developer . . </span></p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- ------------ about ---------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row centre">
+                <div class="row-col-1">
+                    <img src="./images/bg-black.png" alt="My Pic">
+                </div>
+                <div class="row-col-2">
+                    <h1>About me</h1>
+                    <p>As a dedicated front-end developer with two years of hands-on experience and six months of professional practice, I am committed to continuous self-improvement and career advancement. My focus lies predominantly in front-end technologies including HTML, CSS, and JavaScript, with a keen interest in exploring diverse facets such as AI, backend development, and Firebase fundamentals, reflecting my passion for holistic growth in the field.</p>
+                    <div class="tab-titles centre">
+                        <div class="tab-links cursor" onclick="openTab('skills')">Skills</div>
+                        <div class="tab-links cursor" onclick="openTab('experience')">Experience</div>
+                        <div class="tab-links cursor" onclick="openTab('education')">Education</div>
+                    </div>
+
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span>
+                                <br>
+                                HTML5, CSS3, Javascript
+                            </li>
+                            <li><span>Framework</span>
+                                <br>
+                                Bootstrap
+                            </li>
+                            <li><span>Languages</span>
+                                <br>
+                                C, C++, Java, Javascript, python
+                            </li>
+                            <li><span>Other</span>
+                                <br>
+                                Git/Github
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Frontend Developer Intern | Eflex Solution</span>
+                                <br>
+                                (Aug - Jan, 2023)
+                                <br>
+                                Mastery of HTML, CSS, Flexbox, Bootstrap, Javascript and efficient coding for responsive websites and optimal user experiences.
+                            </li>
+                            <li><span>Frontend Developer Intern | Interns Pakistan</span>
+                                <br>
+                                (May, 15 - Aug, 15)
+                                <br>
+                                Build the strong concept of HTML, CSS, flex-box and bootstrap. Also develop the concept of responsive website using minimum and efficient coding in less time.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Git Fundamentals | 10 Pearls University</span>
+                                (Sep, 2023 - Oct, 2023)
+                            </li>
+                            <li><span>Web and Mobile App Development | SMIT</span>
+                                (June, 2023 - Present)
+                                <br>
+                                Mern Stack Development course 
+                            </li>
+                            <li><span>Network Associate Security | Virtual University</span>
+                                (Nov, 2022 - Feb, 2023)
+                            </li>
+                            <li><span>BSCS | DCS-UBIT | Karachi University</span>
+                                (Jan, 2022 - Present)
+                                <br>
+                                Build a strong concept of OOP, DSA, currently working on AI and DBMS with 3+ CGPA.
+                            </li>
+                            <li><span>Intermediate | BAMM P.E.C.H.S govt. college</span>
+                                (2019 - 2021)
+                                <br>
+                                from BAMM PECHS Government College for women with A+1 grade.
+                            </li>
+                            <li><span>Matriculation | Millennium's Education System</span>
+                                (2007 - 2019)
+                                <br>
+                               from Millennium's Education System with A+1 grade.
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------- services ---------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title centre">My Service</h1>
+            <h1>
+                <div class="service-lists centre">
+                    <div class="cursor">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Frontend Develoment</h2>
+                        <p>Offering comprehensive front-end development services honed over two years, specializing in HTML, CSS, and JavaScript, with a commitment to delivering sleek, responsive, and user-centric web solutions tailored to your needs. Passionate about crafting intuitive user experiences, optimizing performance, and staying abreast of the latest industry trends and technologies.</p>
+                        <a href="https://www.linkedin.com/in/isbahansariii/" target="_blank">Learn more</a>
+                    </div>
+                </div>
+            </h1>
+        </div>
+    </div>
+
+    <!-- ----------------------- project -------------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title centre">My Work</h1>
+                <div class="work-list centre">
+
+                    <div class="work cursor">
+                        <img src="./images/work-img (1).jpg" alt="Foodpanda Clone" ></img>
+                        <div class="layer centre">
+                            <h3>Foodpanda Clone</h3>
+                            <p>A meticulously crafted 5-page Foodpanda replica, meticulously designed using HTML, CSS, and Bootstrap, ensuring meticulous attention to detail in every aspect.</p>
+                            <a href="https://isbahansariii.github.io/foodpanda-htmlCss/" target="_blank" class="work-link centre"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work cursor">
+                        <img src="./images/work-img (2).jpg" alt="Pomodoro Timer" ></img>
+                        <div class="layer centre">
+                            <h3>Pomodoro Timer</h3>
+                            <p>Boost productivity with our Pomodoro Timer web-app, offering focused work sessions and rejuvenating breaks. Crafted with HTML, CSS, and vanilla JS for seamless user experience.</p>
+                            <a href="https://isbahansariii.github.io/pomodoro-timer/" target="_blank" class="work-link centre"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work cursor">
+                        <img src="./images/work-img (3).jpg" alt="Tic-Tac-Toe game" ></img>
+                        <div class="layer centre">
+                            <h3>Tic-Tac-Toe game</h3>
+                            <p>Introducing my latest creation: a responsive Tic Tac Toe game coded in HTML, CSS, and JavaScript. Delving into JavaScript logic refinement while eyeing future UI/UX enhancements.</p>
+                            <a href="https://isbahansariii.github.io/tic-tac-toe/" target="_blank" class="work-link centre"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="https://github.com/isbahansariii" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-- ----------------------- contact ------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row centre">
+            <div class="contact-left">
+                <h1 class="sub-title ">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> ansariisbah427@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/isbahansariii/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/isbahansariii" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/isbahansariii" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="./resume/Resume of Isbah Ansari.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2 cursor" >Submit</button>
+                </form>
+                <div id="submitMessage"></div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Isbah Ansari 2024. All rights reserved.</p>
+    </div>
+</div>
+    <script src="./app.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwutteU2OBdeVwcbDIx_QqPrgz6FgxBLoiNKDu9pHVlBz7NEBTsnWpddnN1gS5AzqcK/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const submitMessage = document.getElementById("submitMessage")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                submitMessage.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    submitMessage.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

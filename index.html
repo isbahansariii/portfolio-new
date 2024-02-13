@@ -12,12 +12,12 @@
     
     <title>Isbah Ansari - Portfolio</title>
 </head>
-<body>
+<body class="dark">
     <div id="header">
         <div class="container">
 
             <!-- ------Nav Bar------ -->
-            <nav class="centre">
+            <nav class="dark centre">
                 <div class="logo centre">Is<span>bah</span></div>
                 <div class="links">
                     <ul id="sideMenu" class="centre">
@@ -26,6 +26,7 @@
                         <li><a id="servicesButton" href="#services">Services</a></li>
                         <li><a id="projectsButton" href="#projects">Projects</a></li>
                         <li><a id="contactButton" href="#contact">Contact</a></li>
+                        <li><button class="btn btn3 dark" onclick="changeMode()">Light Mode</button></li>
                         <i class="fa-solid fa-xmark centre" onclick="closemenu()"></i>
                     </ul>
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -184,7 +185,7 @@
                     </div>
 
                 </div>
-                <a href="https://github.com/isbahansariii" class="btn">See more</a>
+                <a href="https://github.com/isbahansariii" class="btn btn4 dark">See more</a>
         </div>
     </div>
 
@@ -215,9 +216,12 @@
             </div>
         </div>
     </div>
-    <div class="copyright">
+
+    <!-- -------------------------footer---------------- -->
+    <footer class="copyright">
         <p>Copyright © Isbah Ansari 2024. All rights reserved.</p>
-    </div>
+    </footer>
+
 </div>
     <script src="./app.js"></script>
     <script>
@@ -229,11 +233,11 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
+                form.reset()
                 submitMessage.innerHTML = "Message sent successfully!"
                 setTimeout(function(){
                     submitMessage.innerHTML = ""
                 }, 5000)
-                form.reset()
             })
             .catch(error => console.error('Error!', error.message))
         })
